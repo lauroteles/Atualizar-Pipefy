@@ -2,6 +2,8 @@ import pandas as pd
 import streamlit as st
 import openpyxl as op
 import os
+
+
 class Pipefy():
 
     def __init__(self,caminho_dados):
@@ -41,29 +43,6 @@ if __name__ =="__main__":
     pipe_atualizar.to_excel('Operadores_07/02/2024.xlsx')
     
 
-
-
-
-
-
-
-
-
-
-# pipefy_id = pd.read_excel('new_report_07-02-2024.xlsx')
-# controle = controle.iloc[:,[2,6]].reset_index()
-# pipefy_id = pipefy_id.iloc[:,[2,21]]
-
-# pipefy_id['Conta'] = pipefy_id['Conta'].astype(str)
-# controle['Conta'] = controle['Conta'].astype(str).str.replace('.0','')
-
-# pipe_novo_operador = pd.merge(pipefy_id,controle,on='Conta',how='inner').drop(columns='index')
-
-
-
-# st.dataframe(pipe_novo_operador)
-# st.dataframe(controle)
-# st.dataframe(pipefy_id)
 
 
 
